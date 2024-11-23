@@ -8,21 +8,22 @@
         width: 600px;
         height: auto;
     }
-    hi {
+    h1 {
         color: red;
     }
 </style>
     <head>
     <body>
     <h1>my Cool Website</h1>
-    <p>I think HTML is neat
+    <p>I think HTML is neat</p>
 
 
     <img src="https://images.wallpapersden.com/image/download/pokemon-scarlet-and-violet-hd_bW1qamqUmZqaraWkpJRmbmdlrWZlbWU.jpg">
 
 
 <blockquote>"I was an avid anime watcher until I was about 10, when I moved to manga. I think I am influenced by Osamu Tezuka's and Walt Disney's works which I watched during that time, such as Tetsuwan Atom and 101 Dalmatians."-Akira Toriyama</blockquote>
-<button onClick="changeQuote">Change Quote</button>
+<button onclick="changeQuote()">Change Quote</button>
+
 <script>
     var index = 0;
 
@@ -33,6 +34,7 @@
 `"why did you do this to me?"-Daniel Raymond`,
 `"I was an avid anime watcher until I was about 10, when I moved to manga. I think I am influenced by Osamu Tezuka's and Walt Disney's works which I watched during that time, such as Tetsuwan Atom and 101 Dalmatians."-Akira Toriyama`,
         ];
+
         var blockquote = document.querySelector("blockquote");
         blockquote.innerHtml = quotes[index];
 
